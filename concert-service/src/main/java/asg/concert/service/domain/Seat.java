@@ -7,7 +7,10 @@ import java.util.Objects;
 
 public class Seat {
 
-    // TODO Implement this class.
+    private String label;
+    private boolean isBooked;
+    private LocalDateTime date;
+    private BigDecimal price;
 
 	public Seat() {}
 
