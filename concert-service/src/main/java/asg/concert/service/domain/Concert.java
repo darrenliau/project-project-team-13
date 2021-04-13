@@ -28,6 +28,19 @@ public class Concert {
         this.blurb = blurb;
     }
 
+    public long getId() {
+        return id;
+    }
+    public String getTitle(){
+        return title;
+    }
+    public String getImageName(){
+        return imageName;
+    }
+    public String getBlurb(){
+        return blurb;
+    }
+
     public Set<LocalDateTime> getDates() {
         return null;
     }
