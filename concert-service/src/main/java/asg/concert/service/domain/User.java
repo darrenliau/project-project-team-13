@@ -1,15 +1,22 @@
 package asg.concert.service.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-
+@Entity
 public class User {
     @Id
     @GeneratedValue
     private long id;
 
+    @Column(name = "USERNAME", length = 50, nullable = false)
     private String username;
+
+    @Column(name = "PASSWORD",length = 50, nullable = false)
     private String password;
+
+    @Column(name = "VERSION", length = 50, nullable = false)
     private long version;
 
     public User() {}

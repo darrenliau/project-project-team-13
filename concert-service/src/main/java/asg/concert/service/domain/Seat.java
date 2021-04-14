@@ -14,6 +14,7 @@ public class Seat {
     private LocalDateTime date;
     private BigDecimal price;
 
+    public Seat(){}
 	public Seat(String label, BigDecimal price) {
 	    this.label = label;
 	    this.price = price;
